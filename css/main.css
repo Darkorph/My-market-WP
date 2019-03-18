@@ -1,0 +1,125 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Mon Header */
+header {
+  width: 100%;
+  background: #ffffff;
+  height: 60px;
+  line-height: 60px;
+}
+.wrapper-inner {
+  padding: 7em 1.5em;
+}
+.p-bot {
+  padding-bottom: 0.7em;
+}
+.m-bot {
+  margin-bottom: 0.7em;
+}
+.nav-button {
+  position: absolute;
+  right: 20px;
+}
+.nav-button button {
+  border: none;
+  background: none;
+  font-size: 3em;
+  line-height: 60px;
+}
+.logo {
+  font-size: 3em;
+}
+.menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+.menu li {
+  display: block;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+.menu li:hover {
+  display: block;
+  background: #ffffff;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #666;
+}
+.menu ul li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #666;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: #666;
+}
+.glyphicon-home {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin: 0 auto;
+}
+header {
+  display: inline-block;
+  font-size: 12px;
+}
+span {
+  padding-left: 20px;
+}
+a {
+  color: #336699;
+}
+/* Fin de header */
+.banner {
+  background-color: rgba(42, 47, 74, 0.8);
+}
+.hr-w {
+  width: 8em;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content div {
+  width: 100%;
+  border: 1px solid indianred;
+}
+@media screen and (min-width: 768px) {
+  .content div {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 64em) {
+  .content div {
+    width: 30%;
+  }
+  .content div:nth-child(4n-2),
+  .content div:nth-child(4n-1) {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

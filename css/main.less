@@ -1,0 +1,122 @@
+@laptop: ~'screen and (min-width: 64em)';
+@tablet: ~'screen and (min-width: 768px)';
+body,*{
+//margin: 0 10px;
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Mon Header */
+header{
+  width:100%;
+  background:#ffffff;
+  height:60px;
+  line-height:60px;
+}
+.wrapper-inner {
+  padding: 7em 1.5em;
+
+}
+.p-bot {
+  padding-bottom: 0.7em;
+}
+.m-bot {
+  margin-bottom: 0.7em;
+}
+//.hamburger{
+//  background:none;
+//  position:absolute;
+//  top:0;
+//  right:0;
+//  line-height:45px;
+//  padding:5px 15px 0px 15px;
+//  color:#999;
+//  border:0;
+//  font-size:1.4em;
+//  font-weight:bold;
+//  cursor:pointer;
+//  outline:none;
+//  z-index:10000000000000;
+//}
+//.cross{
+//  background:none;
+//  position:absolute;
+//  top:0px;
+//  right:0;
+//  padding:7px 15px 0px 15px;
+//  color:#999;
+//  border:0;
+//  font-size:3em;
+//  line-height:65px;
+//  font-weight:bold;
+//  cursor:pointer;
+//  outline:none;
+//  z-index:10000000000000;
+//}
+.nav-button {
+  position: absolute;
+  right: 20px;
+
+  button {
+    border: none;
+    background: none;
+    font-size: 3em;
+    line-height: 60px;
+
+  }
+}
+.logo {
+  font-size: 3em;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+.glyphicon-home{
+  color:white;
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
+}
+header{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:#336699;}
+
+/* Fin de header */
+
+// banner
+
+.banner {
+  background-color: rgba(42,47,74,0.8);
+}
+.hr-w {
+  width: 8em;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    width: 100%;
+    border: 1px solid indianred;
+    
+    @media @tablet {
+      width: 50%;
+    }
+    @media @laptop {
+      width: 30%;
+      &:nth-child(4n-2),&:nth-child(4n-1) {
+        width: 70%;
+    }
+  }
+
+
+  }
+
+}
+
+
