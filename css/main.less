@@ -21,8 +21,15 @@ header{
   cursor: pointer;
 }
 .wrapper-inner {
-  padding: 7em 1.5em;
 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  section {
+    padding: 10em 1.5em;
+
+  }
 }
 .p-bot {
   padding-bottom: 0.7em;
@@ -91,6 +98,17 @@ a{color:#336699;}
     }
   }
 }
+
+.back-color {
+  transition-duration: 0.5s;
+  &:hover {
+    background-color: transparent!important;
+
+  }
+}
+
+
+
 
 // SINGLE
 .content-single {
