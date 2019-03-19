@@ -28,4 +28,8 @@
         <li><a href="#">GET STARTED</a></li>
         <li><a href="#">LOGIN</a></li>
     </ul>
+    <?php wp_nav_menu( array(
+        'theme_location' => 'main',
+        'menu_class' => 'links',
+        'container' =>false ) ); ?>
 </div>

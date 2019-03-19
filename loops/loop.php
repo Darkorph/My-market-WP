@@ -7,7 +7,7 @@
  */
 ?>
 
-<div id="post-<?php the_id(); ?>" <?php post_class('wrapper-inner post'); ?> style="background-image: url('<?php echo get_the_post_thumbnail_url();?>') ">
+<div id="post-<?php the_id(); ?>" <?php post_class('wrapper-inner post'); ?> style="background-image: url('<?php if ( has_post_thumbnail()){echo get_the_post_thumbnail_url();}else{echo get_template_directory_uri()."/img/1000x400.png";} ?>') ">
 
         <section class="back-color">
 

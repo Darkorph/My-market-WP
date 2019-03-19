@@ -18,7 +18,6 @@ if ( has_post_thumbnail() ) {?> <div><?php the_post_thumbnail();?></div>
 <?php}else{?>
     <img src="<?php echo get_template_directory_uri(); ?>/img/1000x400.png" alt="">
 
-
     <?php
 }
     echo '<p>'; the_content(); echo '</p>';

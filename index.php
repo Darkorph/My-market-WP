@@ -15,6 +15,11 @@
 
         </div>
     </div>
+<?php if ( is_active_sidebar( 'new-widget-area' ) ) : ?>
+    <div id="footer-widget-area" class=" pure-g nwa-footer-widget widget-area" role="complementary">
+    <div class="pure-u-1-3 no-list"><?php dynamic_sidebar( 'new-widget-area'); ?></div>
+    </div>
+<?php endif; ?>
 
 <div class="content">
 
