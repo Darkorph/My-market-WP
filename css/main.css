@@ -4,12 +4,19 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 /* Mon Header */
 header {
   width: 100%;
   background: #ffffff;
   height: 60px;
   line-height: 60px;
+}
+.post {
+  cursor: pointer;
 }
 .wrapper-inner {
   padding: 7em 1.5em;
@@ -29,6 +36,7 @@ header {
   background: none;
   font-size: 3em;
   line-height: 60px;
+  cursor: pointer;
 }
 .logo {
   font-size: 3em;
@@ -106,7 +114,6 @@ a {
 }
 .content div {
   width: 100%;
-  border: 1px solid indianred;
 }
 @media screen and (min-width: 768px) {
   .content div {
@@ -121,5 +128,8 @@ a {
   .content div:nth-child(4n-1) {
     width: 70%;
   }
+}
+.content-single {
+  padding: 5em;
 }
 /*# sourceMappingURL=main.css.map */

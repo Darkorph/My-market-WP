@@ -22,15 +22,13 @@ function market_styles()
        wp_enqueue_script('jquery');
        wp_enqueue_script('burger');
        wp_enqueue_script('main');
-
-
-
-
-        
    }
 }
 add_action('wp_enqueue_scripts', 'market_styles');
 
+function wpdocs_custom_excerpt_length( $length ) {
+    return 50;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
 ?>
-
-

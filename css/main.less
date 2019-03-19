@@ -6,12 +6,19 @@ margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 /* Mon Header */
 header{
   width:100%;
   background:#ffffff;
   height:60px;
   line-height:60px;
+}
+.post {
+  cursor: pointer;
 }
 .wrapper-inner {
   padding: 7em 1.5em;
@@ -23,36 +30,6 @@ header{
 .m-bot {
   margin-bottom: 0.7em;
 }
-//.hamburger{
-//  background:none;
-//  position:absolute;
-//  top:0;
-//  right:0;
-//  line-height:45px;
-//  padding:5px 15px 0px 15px;
-//  color:#999;
-//  border:0;
-//  font-size:1.4em;
-//  font-weight:bold;
-//  cursor:pointer;
-//  outline:none;
-//  z-index:10000000000000;
-//}
-//.cross{
-//  background:none;
-//  position:absolute;
-//  top:0px;
-//  right:0;
-//  padding:7px 15px 0px 15px;
-//  color:#999;
-//  border:0;
-//  font-size:3em;
-//  line-height:65px;
-//  font-weight:bold;
-//  cursor:pointer;
-//  outline:none;
-//  z-index:10000000000000;
-//}
 .nav-button {
   position: absolute;
   right: 20px;
@@ -62,6 +39,7 @@ header{
     background: none;
     font-size: 3em;
     line-height: 60px;
+    cursor: pointer;
 
   }
 }
@@ -102,8 +80,6 @@ a{color:#336699;}
   flex-wrap: wrap;
   div {
     width: 100%;
-    border: 1px solid indianred;
-    
     @media @tablet {
       width: 50%;
     }
@@ -111,12 +87,14 @@ a{color:#336699;}
       width: 30%;
       &:nth-child(4n-2),&:nth-child(4n-1) {
         width: 70%;
+      }
     }
   }
+}
 
-
-  }
-
+// SINGLE
+.content-single {
+  padding: 5em;
 }
 
 
