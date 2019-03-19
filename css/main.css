@@ -19,7 +19,12 @@ header {
   cursor: pointer;
 }
 .wrapper-inner {
-  padding: 7em 1.5em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper-inner section {
+  padding: 10em 1.5em;
 }
 .p-bot {
   padding-bottom: 0.7em;
@@ -128,6 +133,12 @@ a {
   .content div:nth-child(4n-1) {
     width: 70%;
   }
+}
+.back-color {
+  transition-duration: 0.5s;
+}
+.back-color:hover {
+  background-color: transparent!important;
 }
 .content-single {
   padding: 5em;

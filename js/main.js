@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 
     $(function() {
-        $(".wrapper-inner").each(function() {
-            var hue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
+        $("section").each(function() {
+            var hue = 'rgba(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) +  ',' + (0.8) + ')';
             $(this).css("background-color", hue);
         });
     });

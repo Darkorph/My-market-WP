@@ -1,5 +1,5 @@
 <?php
-
+add_theme_support( 'post-thumbnails' );
 function market_styles()
 {
    //  register/enqueue
@@ -27,7 +27,7 @@ function market_styles()
 add_action('wp_enqueue_scripts', 'market_styles');
 
 function wpdocs_custom_excerpt_length( $length ) {
-    return 50;
+    return 10;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
