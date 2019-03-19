@@ -13,9 +13,9 @@ get_header();
        echo '<h3>'; the_title(); echo '</h3>';
 
 
-if ( has_post_thumbnail() ) {
-    the_post_thumbnail();
-}else{?>
+if ( has_post_thumbnail() ) {?> <div><?php the_post_thumbnail();?></div>
+
+<?php}else{?>
     <img src="<?php echo get_template_directory_uri(); ?>/img/1000x400.png" alt="">
 
 
