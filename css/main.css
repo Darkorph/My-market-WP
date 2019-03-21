@@ -4,6 +4,12 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
+.slider {
+  overflow: hidden;
+}
+.slider-content {
+  height: 70vh;
+}
 a {
   text-decoration: none;
   color: black;
@@ -154,7 +160,7 @@ a {
 .content div {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .content div {
     width: 50%;
   }
@@ -173,6 +179,13 @@ a {
 }
 .back-color:hover {
   background-color: transparent!important;
+}
+.slider-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 .content-single {
   padding: 5em;

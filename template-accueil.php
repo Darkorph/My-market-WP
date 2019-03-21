@@ -5,17 +5,7 @@ Template Name: Accueil
 */
 
 get_header();?>
-<!-- Banner -->
-<!--
-<section id="banner">
-    <div class="inner">
-        <h1>Ma page d'accueil <a href="https://templated.co">TEMPLATED</a></h1>
-        <ul class="actions">
-            <li><a href="#post-<?php the_id(); ?>" class="button alt scrolly big">Continue</a></li>
-        </ul>
-    </div>
-</section>
--->
+
 <script>
     jQuery(function($) {
 
@@ -37,21 +27,15 @@ get_header();?>
    $custom_posts =get_posts($args);
    foreach($custom_posts as $post) :setup_postdata($post);
     ?>
-            <li class="slider-post" style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.5)), url('<?php echo get_the_post_thumbnail_url(); ?>')">
+            <li class="slider-post" style="background-image: url('<?php if ( has_post_thumbnail()){echo get_the_post_thumbnail_url();}else{echo get_template_directory_uri()."/img/1000x400.png";} ?>') ">
 
-                <div class="slider-post-content wrapper-inner">
-                    <p><a class="title" href="<?php the_permalink();?>">
-                            <?php the_title(); ?></a></p>
-                    <p class="author">
-                        Ecrit par : <?php the_author(); ?>
-                        dan la catégorie : <?php the_category('|'); ?>
-                    </p>
-                    <p>
-                        <?php the_excerpt(); ?>
-                    </p>
-                    <ul class="list-unstyled">
-                        <li><a href="<?php the_permalink() ?>" class="button">Read More</a></li>
-                    </ul>
+                <div class="slider-content">
+                    <?php
+                   echo '<h3 class="m-bot">'; the_title(); echo '</h3>';
+                    echo '<div class="m-bot">'.get_the_date().'</div>';
+                    echo '<h3 class="m-bot">'; the_author(); echo '</h3>';
+                    echo '<p>'.get_the_excerpt('').'</p>';
+                    ?>
 
                 </div>
             </li>
@@ -62,8 +46,6 @@ get_header();?>
         </ul>
     </div>
 </div>
-
-
 
 <!---------SLIDER-------->
 
