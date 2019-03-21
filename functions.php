@@ -62,3 +62,5 @@ function footer_widgets_init()
 }
 add_action( 'widgets_init', 'footer_widgets_init' );
 
+
+
