@@ -1,10 +1,16 @@
 @laptop: ~'screen and (min-width: 64em)';
-@tablet: ~'screen and (min-width: 768px)';
+@tablet: ~'screen and (min-width: 48em)';
 body,*{
 //margin: 0 10px;
 margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.slider{
+  overflow: hidden;
+}
+.slider-content {
+  height: 70vh;
 }
 a {
   text-decoration: none;
@@ -105,6 +111,15 @@ a{color:#336699;}
     background-color: transparent!important;
 
   }
+}
+
+//SLIDER
+.slider-content{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 
