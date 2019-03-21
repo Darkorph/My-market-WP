@@ -50,7 +50,8 @@ get_header();?>
 <!---------SLIDER-------->
 
 <?php
-echo '<div>'.do_shortcode("[meteo12devs]").'</div>';
+
+echo '<div>'.do_shortcode("[meteo12devs city='paris']").'</div>';
 
 if(current_user_can('administrator')){
     echo 'Je suis l\'administrateur<br>';
