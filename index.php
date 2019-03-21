@@ -10,7 +10,7 @@
                 adipisicing elit. Architecto deserunt et
                 fugiat impedit, amet, consectetur adipisicing
                 elit. Architecto deserunt e laboriosam laudantium
-                minus molestia</p>
+                minus molestia qqqqqqqqqqqqqqqqqqqqq</p>
             <a href="">Get started  ⟶</a>
 
         </div>
@@ -36,6 +36,10 @@
 <!--            <p class="m-bot">Lorem ipsum dolor</p>-->
 <!--        </div>-->
 
+
+
 </div>
+
+
 
 <?php get_footer();?>
